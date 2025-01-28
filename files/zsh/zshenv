@@ -1,0 +1,34 @@
+# linking ~/.zshenv to $ZDOTDIR/.zshenv
+
+
+# 
+export HISTFILE=~/.config/zsh/zhistory
+export HISTSIZE=5000
+export SAVEHIST=5000
+# export HISTORY_IGNORE="(ls|cd|pwd|exit|history|cd -|cd ..)"
+
+# polybar  
+if [ -d "$HOME/.local/bin" ] ; then
+  PATH="$HOME/.local/bin:$PATH"
+fi 
+
+# x11  
+export DISPLAY=:0
+export XDG_RUNTIME_DIR=${TMPDIR}
+
+# Shell
+export USER="𝕯𝖊𝖒𝖔𝖓"
+export EDITOR=nvim
+export CLIPCOPY=wl-copy
+export CLIPPASTE=wl-paste
+export TERM=xterm-256color
+
+
+# Config  
+export ZDOTDIR=$HOME/.config/zsh
+export GOPATH=$HOME/.go
+export GOBIN=$GOPATH/bin
+export PATH=$GOBIN:$PATH
+export PATH=$HOME/.config/npm/bin:$PATH
+
+

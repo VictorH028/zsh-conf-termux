@@ -1,0 +1,16 @@
+# Este archivo se obtiene únicamente para shells interactivos.  Él
+# debe contener comandos para configurar alias, funciones,
+# opciones, combinaciones de teclas, etc.
+#
+# orden Gloval : zshenv, zprofile, zshrc, zlogin    
+
+
+# Load configs in specific order
+source "$ZDOTDIR/omz.zsh"
+source "$ZDOTDIR/options.zsh"
+source ~/.config/shell/functions.sh
+source ~/.config/shell/config.sh
+source "$ZDOTDIR/aliases.zsh"
+source "$ZDOTDIR/keys.zsh"
+
+
