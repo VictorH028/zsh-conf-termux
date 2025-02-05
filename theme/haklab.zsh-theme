@@ -1,0 +1,3 @@
+# haklab.zsh-theme 
+
+PROMPT=''

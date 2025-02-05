@@ -11,12 +11,12 @@ URL_PLUGINS_3="https://github.com/marlonrichert/zsh-autocomplete"
 
 # Install config  
 spix  -q -t "Donwlading oh-my-zsh..."  -p "git clone $URL_OM_MY_ZSH  --depth 1 $ZSH_CUSTOM/.oh-my-zsh"
-spix  -q -t "Donwlading plugins..." \
--p "git clone $URL_PLUGINS_1 $ZSH_CUSTOM/.oh-my-zsh/plugins/zsh-syntax-highlighting && \
-    git clone $URL_PLUGINS_2 $ZSH_CUSTOM/.oh-my-zsh/plugins/zsh-autosuggestions && \
-    git clone $URL_PLUGINS_3 $ZSH_CUSTOM/.oh-my-zsh/plugins/zsh-autocomplete && \
-    git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins $ZSH_CUSTOM/.oh-my-zsh/plugins/autoupdate"
-echo "Donwlading complete"
+spix  -q -t "Donwlading zsh-syntax-highlighting ..." -p "git clone $URL_PLUGINS_1 $ZSH_CUSTOM/.oh-my-zsh/plugins/zsh-syntax-highlighting" 
+spix  -q -t "Donwlading zsh-autosuggestions ... " -p "git clone $URL_PLUGINS_2 $ZSH_CUSTOM/.oh-my-zsh/plugins/zsh-autosuggestions " 
+spix  -q -t "Donwlading zsh-autocomplete ... " -p "git clone $URL_PLUGINS_3 $ZSH_CUSTOM/.oh-my-zsh/plugins/zsh-autocomplete" 
+spix  -q -t "Donwlading autoupdate-oh-my-zsh-plugins" -p   "git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins $ZSH_CUSTOM/.oh-my-zsh/plugins/autoupdate"
+
+echo -en "\rDonwlading complete"
 
 # Copiando archivos 
 configs=($(ls -A $(pwd)/files))
