@@ -6,7 +6,7 @@
 # Install
 
 ```
-git clone https://github.com/VictorH028/zsh-conf-termux- && cd zsh-conf-termux- 
+git clone https://github.com/VictorH028/zsh-conf-termux- && cd zsh-conf-termux   
 ```
 
 ```

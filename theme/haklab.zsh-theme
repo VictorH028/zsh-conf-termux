@@ -1,3 +1,3 @@
 # haklab.zsh-theme 
 
-PROMPT=''
+PROMPT='x= '
