@@ -1,4 +1,4 @@
-# zsh-conf-termux-
+# zsh-conf-termux
 
 > [!NOTE]
 > Usage in `i-haklab` 

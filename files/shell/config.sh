@@ -2,6 +2,6 @@ if test -f "$PREFIX/etc/apt/sources.list.d/ivam3-termux-packages.list"; then
     # Nada por ahora
     :
 else
-    echo "ADVERTENCIA: ivam3-termux-packages.list NO existe. Asegúrate de instalarlo."
+    echo "WARNING: ivam3-termux-packages.list does not exist. Be sure to install it"
 fi
 

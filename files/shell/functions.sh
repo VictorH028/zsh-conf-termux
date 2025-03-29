@@ -86,16 +86,9 @@ man() {
         man "$@"
 }
 
-# show colored text
-color_text() {
-    for code in {000..255}; do
-        printf "%s: \033[38;5;%smThis is how your text would look like\033[0m\n" "$code" "$code"
-    done
-}
-
 # 
 baner_pantalla() {
-  bash "~/.local/etc/i-Haklab/banner/i-Haklab"
+   bash ~/.local/etc/i-Haklab/banner/i-Haklab
 }
 
 adminfiles() {
