@@ -5,10 +5,11 @@ zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 zle -N copy-earlier-word
 
-copy-command () { $CLIPCOPY -n <<< $BUFFER }
+copy-command () { $CLIPCOPY  <<< $BUFFER }
 zle -N copy-command
-
-
+#
+# pega-command () {  termux-clipboard-get   }
+# zle -N pega-command
 
 bindkey "^[." insert-last-word
 bindkey "^[m" copy-earlier-word
@@ -29,5 +30,5 @@ bindkey "^x^e" edit-command-line
 bindkey "^x^v" vi-cmd-mode
 bindkey "^x^x" exchange-point-and-mark
 bindkey "^y" copy-command
-
+# bindkey "^m" pega-command
 
