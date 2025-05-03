@@ -1,6 +1,3 @@
-# Path to oh-my-zsh installation.
-export ZSH="$ZDOTDIR/.oh-my-zsh"
-
 # Plugins  
 plugins=(
    autoupdate 

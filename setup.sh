@@ -35,14 +35,14 @@ if test -d ~/.config/zsh; then
         echo "El archivo ~/.zshrc ya existe."
     else
         ln -s ~/.config/zsh/zshrc ~/.zshrc
-        echo "Enlace simbólico creado para ~/.zshrc."
+        # echo "Enlace simbólico creado para ~/.zshrc."
     fi
 
     if test -f ~/.zshenv; then
         echo  "El archivo ~/.zshenv ya existe."
     else
         spin -p "ln -s ~/.config/zsh/zshenv ~/.zshenv" 
-        echo "Enlace simbólico creado para ~/.zshenv."
+        # echo "Enlace simbólico creado para ~/.zshenv."
     fi
 else
     echo "El directorio ~/.config/zsh no existe."

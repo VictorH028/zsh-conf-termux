@@ -19,13 +19,14 @@ export XDG_RUNTIME_DIR=${TMPDIR}
 # Shell
 export USER="𝕯𝖊𝖒𝖔𝖓"
 export EDITOR=nvim
-export CLIPCOPY=wl-copy
-export CLIPPASTE=wl-paste
+export CLIPCOPY=termux-clipboard-set
+export CLIPPASTE=termux-clipboard-get
 export TERM=xterm-256color
 
 
 # Config  
 export ZDOTDIR=$HOME/.config/zsh
+export ZSH="$ZDOTDIR/.oh-my-zsh"
 export GOPATH=$HOME/.go
 export GOBIN=$GOPATH/bin
 export PATH=$GOBIN:$PATH
