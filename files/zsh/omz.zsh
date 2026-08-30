@@ -1,12 +1,12 @@
 # Plugins  
 plugins=(
-   autoupdate 
    # zsh-autocomplete 
+   fzf 
    zsh-autosuggestions 
    zsh-syntax-highlighting
 )
 
 # Theme  
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="haklab"
 
 source $ZSH/oh-my-zsh.sh

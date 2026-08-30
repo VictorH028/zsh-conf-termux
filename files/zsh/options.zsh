@@ -3,15 +3,28 @@ setopt ZLE      # Habilite el editor de líneas ZLE, que es el comportamiento pr
 # declare -U path # Evitar las entradas duplicadas en la ruta.
 setopt AUTO_CD                  # Envía comandos de cd sin necesidad de 'cd'
 autoload -U compinit            # Autocarga completa
+compinit -u 
+setopt AUTO_MENU          # Muestra menú después de 2 tabs
+setopt ALWAYS_TO_END      # Mueve el cursor al final al completar
+setopt COMPLETE_IN_WORD   # Completa desde el cursor, no desde el inicio   
+
 setopt NO_CASE_GLOB             # No distinge entre mayuscula y minuscula
 
-setopt extended_glob
-setopt glob_dots
+# setopt extended_glob
+# setopt glob_dots
 setopt interactive_comments
 setopt menu_complete
 setopt nomatch
 setopt sharehistory
 unsetopt beep
+
+##### Nuebo  
+#
+#
+setopt CORRECT              # Corrige comandos mal escritos
+setopt CORRECT_ALL          # Corrige argumentos también
+setopt DVORAK               # Si usás ese teclado (opcional)   
+
 
 #  ┬ ┬┬┌─┐┌┬┐┌─┐┬─┐┬ ┬
 #  ├─┤│└─┐ │ │ │├┬┘└┬┘

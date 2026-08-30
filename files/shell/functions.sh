@@ -86,20 +86,7 @@ man() {
         man "$@"
 }
 
-# 
-baner_pantalla() {
-   bash ~/.local/etc/i-Haklab/banner/i-Haklab
-}
-
 adminfiles() {
   am start -a android.intent.action.VIEW -d "content://com.android.externalstorage.documents/root/primary" >/dev/null
-}
-
-cinderella() {
-        if [ test ls /data/data/com.termux/files/home/.local/libexec/cinderella 2>/dev/null ]; then           
-            bash /data/data/com.termux/files/home/.local/libexec/cinderella $argv           
-        else
-           echo -en "\e[31m(➤_)\e[0m missing argument, type i-Haklab help for helpper\n"
-        fi 
 }
 
